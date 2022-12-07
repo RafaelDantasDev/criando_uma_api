@@ -24,3 +24,16 @@ livros = [
     }
 
 ]
+
+# Consultar(Todos)
+@app.route('/livros', methods=[GET])
+def obter_livros():
+    return jsonify(livros)
+
+# Consultar por id
+
+# Editar
+
+# Excluir
+
+app.run(port=5000, host='localhost', debug=True)
